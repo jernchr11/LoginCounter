@@ -18,15 +18,10 @@ public class LoginMessageActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login_message);
-
 	    Intent intent = getIntent();
 	    String message = intent.getStringExtra(LoginAddActivity.WELCOME_MESSAGE);
-
-	    // Create the text view
 	    TextView welcomeMessageText = (TextView) findViewById(R.id.welcome_message);
 	    welcomeMessageText.setText(message);
-
-	    // Set the text view as the activity layout
 	}
 
 	public void logout(View view) {
